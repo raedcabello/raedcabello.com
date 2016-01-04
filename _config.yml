@@ -1,0 +1,23 @@
+# Site settings
+title: Rae D. Cabello
+email: your-email@domain.com
+meta_title: Rae D. Cabello | Web and print designer, record collector, Spurs fan, etc.
+meta_description: >
+  Rae Cabello is a San Antonio-based graphic designer for Rackspace. He has
+  experience in multiple disciplines, including visual design, interactive design,
+  branding, and research.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://raedcabello.com" # the base hostname & protocol for your site
+twitter_username: raedcabello
+instagram_username: raedcabello
+spotify_username: raedcabello
+
+# Build settings
+markdown: kramdown
+
+error_mode: :strict
+
+exclude:
+  - package.json
+  - node_modules
+  - Gulpfile.js

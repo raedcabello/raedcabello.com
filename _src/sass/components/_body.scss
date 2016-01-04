@@ -1,0 +1,14 @@
+body, html {
+  background-color: $body-bg;
+}
+
+body.fixed-footer {
+  padding-bottom: 120px;
+}
+
+
+#wrap {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 90%;
+}

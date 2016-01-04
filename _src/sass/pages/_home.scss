@@ -1,0 +1,41 @@
+.huge {
+  font-size: 38px;
+  line-height: 1.25;
+  padding: 5em 0 1em 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.social-links {
+  @include old-standard;
+  font-size: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $cool-gray;
+
+      &:hover {
+        color: $green;
+        border-bottom: none;
+      }
+    }
+
+    & + li {
+      margin-left: 1em;
+
+      &:before {
+        color: $cool-gray;
+        content: '/';
+        left: -0.85em;
+        position: absolute;
+      }
+    }
+  }
+}

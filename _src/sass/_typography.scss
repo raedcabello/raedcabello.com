@@ -1,0 +1,35 @@
+body, html {
+  @include vollkorn();
+  background: $body-bg;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include old-standard();
+  margin: 0;
+}
+
+h1 {
+  @include old-standard();
+  font-size: (40/16) * 1rem;
+}
+
+h2 {
+  @include old-standard();
+  font-size: (32/16) * 1rem;
+}
+
+h3 {
+  font-size: (24/16) * 1rem;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: solid 1px $blue;
+  }
+}

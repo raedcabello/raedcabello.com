@@ -1,0 +1,66 @@
+.site-header {
+  padding: 36px 0;
+  z-index: 20;
+
+  .site-title {
+    float: left;
+    font-size: 20px;
+    margin: 0;
+
+    a {
+      color: $text-color;
+
+      &:hover, &:active {
+        color: $text-color;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .nav {
+    float: right;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: -0.25em;
+
+        a {
+          @include old-standard();
+          color: $text-color;
+          display: inline-block;
+          font-size: 20px;
+          padding: 0 1em;
+          text-decoration: none;
+
+          &:hover, &:focus {
+            background: rgba(white, 0.25);
+            border-bottom: none;
+            outline: none;
+          }
+        }
+
+        &.active {
+          a {
+            color: $blue;
+          }
+
+          &:after {
+            background: $blue;
+            bottom: 0px;
+            content: '';
+            display: block;
+            height: 2px;
+            left: 7.5%;
+            position: absolute;
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}

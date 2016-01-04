@@ -1,0 +1,12 @@
+.btn {
+  @include vollkorn();
+  background: tint($text-color, 75%);
+  color: $text-color;
+  display: inline-block;
+  line-height: 1;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  @include transition(background 0.1s ease-in-out);
+}
