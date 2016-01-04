@@ -6,7 +6,7 @@ meta_description: >
   Rae Cabello is a San Antonio-based graphic designer for Rackspace. He has
   experience in multiple disciplines, including visual design, interactive design,
   branding, and research.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/raedcabello.com" # the subpath of your site, e.g. /blog/
 url: "http://raedcabello.com" # the base hostname & protocol for your site
 twitter_username: raedcabello
 instagram_username: raedcabello
