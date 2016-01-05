@@ -44,7 +44,7 @@
     url(https://fonts.gstatic.com/s/vollkorn/v6/KNiAlx6phRqXCwnZZG51JGaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
 }
 
-@mixin vollkorn($weight: 'regular') {
+@mixin vollkorn() {
   font-family: 'Vollkorn';
 }
 

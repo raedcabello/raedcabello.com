@@ -1,12 +1,33 @@
 .btn {
-  @include vollkorn();
   background: tint($text-color, 75%);
+  border: none;
   color: $text-color;
   display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
   line-height: 1;
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: none;
-  text-transform: uppercase;
   @include transition(background 0.1s ease-in-out);
+
+  &.blue {
+    background: $blue;
+    color: white;
+
+    &:hover, &:active {
+      background: shade($blue, 10%);
+      cursor: pointer;
+    }
+  }
+
+  &.green {
+    background: shade($green, 10%);
+    color: white;
+
+    &:hover, &:active {
+      background: shade($green, 15%);
+      cursor: pointer;
+    }
+  }
 }

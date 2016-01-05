@@ -12,6 +12,11 @@ twitter_username: raedcabello
 instagram_username: raedcabello
 spotify_username: raedcabello
 
+collections:
+  work:
+    output: true
+    permalink: /work/:slug/
+
 # Build settings
 markdown: kramdown
 
