@@ -1,11 +1,16 @@
 .home {
   .huge {
-    font-size: 38px;
+    font-size: 28px;
     line-height: 1.25;
-    padding: 1em 0;
+    padding: 0 0 1em 0;
 
     p {
       margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 38px;
+      padding: 1em 0;
     }
   }
 

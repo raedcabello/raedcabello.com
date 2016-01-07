@@ -437,9 +437,15 @@ body * {
 body, html {
   font-family: 'Vollkorn';
   background: #f7f6f0;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: -0.03em;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px) {
+  body, html {
+    font-size: 24px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -524,8 +530,10 @@ body, html {
   background-color: #f7f6f0;
 }
 
-body.fixed-footer {
-  padding-bottom: 120px;
+@media (min-width: 768px) {
+  body.fixed-footer {
+    padding-bottom: 120px;
+  }
 }
 
 #wrap {
@@ -536,14 +544,10 @@ body.fixed-footer {
 
 footer.site-footer {
   background: #f7f6f0;
-  bottom: 0;
   font-size: 18px;
   height: 120px;
-  left: 5%;
   line-height: 120px;
-  position: fixed;
   text-align: center;
-  width: 90%;
 }
 
 footer.site-footer .colophon-link {
@@ -559,6 +563,15 @@ footer.site-footer .colophon-link {
   text-align: center;
   top: 36px;
   width: 48px;
+}
+
+@media (min-width: 768px) {
+  footer.site-footer {
+    bottom: 0;
+    left: 5%;
+    position: fixed;
+    width: 90%;
+  }
 }
 
 @media (min-width: 1089px) {
@@ -605,15 +618,15 @@ textarea {
 }
 
 .site-header {
-  margin-bottom: 72px;
+  margin-bottom: 36px;
   padding: 36px 0;
   z-index: 20;
 }
 
 .site-header .site-title {
-  float: left;
-  font-size: 20px;
-  margin: 0;
+  font-size: 28px;
+  margin: 0 auto 1em auto;
+  text-align: center;
 }
 
 .site-header .site-title a {
@@ -625,8 +638,16 @@ textarea {
   border-bottom: none;
 }
 
+@media (min-width: 768px) {
+  .site-header .site-title {
+    float: left;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
 .site-header .nav {
-  float: right;
+  text-align: center;
 }
 
 .site-header .nav ul {
@@ -647,7 +668,7 @@ textarea {
   color: #333;
   display: inline-block;
   font-size: 20px;
-  padding: 0 1em;
+  padding: 0 0.5em;
   text-decoration: none;
 }
 
@@ -672,19 +693,41 @@ textarea {
   width: 85%;
 }
 
+@media (min-width: 768px) {
+  .site-header .nav {
+    float: right;
+  }
+  .site-header .nav ul li a {
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    margin-bottom: 72px;
+  }
+}
+
 .section {
   padding: 50px calc(50vw - 480px);
   text-align: center;
 }
 
 .home .huge {
-  font-size: 38px;
+  font-size: 28px;
   line-height: 1.25;
-  padding: 1em 0;
+  padding: 0 0 1em 0;
 }
 
 .home .huge p {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .home .huge {
+    font-size: 38px;
+    padding: 1em 0;
+  }
 }
 
 .home .social-links {

@@ -1,12 +1,12 @@
 .site-header {
-  margin-bottom: 72px;
+  margin-bottom: 36px;
   padding: 36px 0;
   z-index: 20;
 
   .site-title {
-    float: left;
-    font-size: 20px;
-    margin: 0;
+    font-size: 28px;
+    margin: 0 auto 1em auto;
+    text-align: center;
 
     a {
       color: $text-color;
@@ -16,10 +16,16 @@
         border-bottom: none;
       }
     }
+
+    @media (min-width: 768px) {
+      float: left;
+      font-size: 20px;
+      text-align: left;
+    }
   }
 
   .nav {
-    float: right;
+    text-align: center;
 
     ul {
       list-style: none;
@@ -35,7 +41,7 @@
           color: $text-color;
           display: inline-block;
           font-size: 20px;
-          padding: 0 1em;
+          padding: 0 0.5em;
           text-decoration: none;
 
           &:hover, &:focus {
@@ -63,5 +69,21 @@
         }
       }
     }
+
+    @media (min-width: 768px) {
+      float: right;
+
+      ul {
+        li {
+          a {
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 72px;
   }
 }

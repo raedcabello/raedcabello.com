@@ -3,7 +3,9 @@ body, html {
 }
 
 body.fixed-footer {
-  padding-bottom: 120px;
+  @media (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 }
 
 
