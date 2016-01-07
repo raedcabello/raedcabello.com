@@ -26,8 +26,10 @@ h3 {
 }
 
 a {
+  border-bottom: solid 1px transparent;
   color: $blue;
   text-decoration: none;
+  @include transition(border-bottom 0.1s ease-in-out);
 
   &:hover {
     border-bottom: solid 1px $blue;

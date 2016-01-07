@@ -21,10 +21,22 @@
 
       a {
         color: $cool-gray;
+        @include transition(color 0.1s ease-in-out);
 
-        &:hover {
-          color: $green;
+        &:hover, &:active {
           border-bottom: none;
+
+          &.instagram {
+            color: $instagram-blue;
+          }
+
+          &.twitter {
+            color: $twitter-blue;
+          }
+
+          &.spotify {
+            color: $spotify-green;
+          }
         }
       }
 

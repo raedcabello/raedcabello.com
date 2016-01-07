@@ -468,8 +468,12 @@ h3 {
 }
 
 a {
+  border-bottom: solid 1px transparent;
   color: #6bc6d8;
   text-decoration: none;
+  -webkit-transition: border-bottom 0.1s ease-in-out;
+  -moz-transition: border-bottom 0.1s ease-in-out;
+  transition: border-bottom 0.1s ease-in-out;
 }
 
 a:hover {
@@ -699,11 +703,25 @@ textarea {
 
 .home .social-links li a {
   color: #939da3;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
-.home .social-links li a:hover {
-  color: #66de90;
+.home .social-links li a:hover, .home .social-links li a:active {
   border-bottom: none;
+}
+
+.home .social-links li a:hover.instagram, .home .social-links li a:active.instagram {
+  color: #3f729b;
+}
+
+.home .social-links li a:hover.twitter, .home .social-links li a:active.twitter {
+  color: #55acee;
+}
+
+.home .social-links li a:hover.spotify, .home .social-links li a:active.spotify {
+  color: #66de90;
 }
 
 .home .social-links li + li {
