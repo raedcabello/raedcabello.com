@@ -1,6 +1,6 @@
 .btn {
   background: tint($text-color, 75%);
-  border: none;
+  border: solid 1px transparent;
   color: $text-color;
   display: inline-block;
   font-family: sans-serif;
@@ -9,14 +9,20 @@
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: none;
-  @include transition(background 0.1s ease-in-out);
+  @include transition(background 0.1s ease-in-out, border 0.1s ease-in-out);
+
+  &:hover, &:focus, &:active {
+    border-color: tint($text-color, 50%);
+    outline: none;
+  }
 
   &.blue {
     background: $blue;
     color: white;
 
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
       background: shade($blue, 10%);
+      border-color: shade($blue, 20%);
       cursor: pointer;
     }
   }
@@ -25,8 +31,9 @@
     background: shade($green, 10%);
     color: white;
 
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
       background: shade($green, 15%);
+      border-color: shade($green, 20%);
       cursor: pointer;
     }
   }

@@ -45,11 +45,11 @@
 }
 
 @mixin vollkorn() {
-  font-family: 'Vollkorn';
+  font-family: 'Vollkorn', Georgia, "Times New Roman", Times, serif;
 }
 
 @mixin old-standard() {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
 }

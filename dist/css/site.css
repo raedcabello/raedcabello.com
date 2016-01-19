@@ -435,7 +435,7 @@ body * {
 }
 
 body, html {
-  font-family: 'Vollkorn';
+  font-family: 'Vollkorn', Georgia, "Times New Roman", Times, serif;
   background: #f7f6f0;
   font-size: 18px;
   letter-spacing: -0.03em;
@@ -449,21 +449,21 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
 }
 
 h2 {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -492,7 +492,7 @@ p {
 
 .btn {
   background: #cccccc;
-  border: none;
+  border: solid 1px transparent;
   color: #333;
   display: inline-block;
   font-family: sans-serif;
@@ -501,9 +501,14 @@ p {
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: none;
-  -webkit-transition: background 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out;
-  transition: background 0.1s ease-in-out;
+  -webkit-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+  -moz-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  border-color: #999999;
+  outline: none;
 }
 
 .btn.blue {
@@ -511,8 +516,9 @@ p {
   color: white;
 }
 
-.btn.blue:hover, .btn.blue:active {
+.btn.blue:hover, .btn.blue:focus, .btn.blue:active {
   background: #60b2c2;
+  border-color: #569ead;
   cursor: pointer;
 }
 
@@ -521,8 +527,9 @@ p {
   color: white;
 }
 
-.btn.green:hover, .btn.green:active {
+.btn.green:hover, .btn.green:focus, .btn.green:active {
   background: #57bd7a;
+  border-color: #52b273;
   cursor: pointer;
 }
 
@@ -591,12 +598,14 @@ textarea {
   background: white;
   border: solid 1px #deddd8;
   color: #333;
-  display: block;
+  display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
-  max-width: 480px;
   padding: 0.5rem 1rem;
-  width: 100%;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  -moz-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+  width: 50%;
 }
 
 input[type="text"]:focus,
@@ -615,6 +624,56 @@ textarea {
 
 .form-control + .form-control {
   margin-top: 1rem;
+}
+
+.form-control .form-control-validation {
+  display: none;
+}
+
+.form-control.error input[type="text"],
+.form-control.error input[type="password"],
+.form-control.error input[type="tel"],
+.form-control.error input[type="email"],
+.form-control.error input[type="number"],
+.form-control.error textarea {
+  border-color: #d76a6a;
+}
+
+.form-control.error .form-control-validation {
+  color: #d76a6a;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0.5rem 0 0 1rem;
+  margin-right: -0.25rem;
+  width: 50%;
+  vertical-align: top;
+}
+
+.contact-form.hide {
+  display: none;
+}
+
+.form-accepted-message {
+  color: #52b273;
+}
+
+.form-accepted-message.hide {
+  display: none;
+}
+
+.form-rejected-message {
+  color: #ac5555;
+  font-size: 16px;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.form-rejected-message.hide {
+  display: none;
+}
+
+input[name="_gotcha"] {
+  display: none;
 }
 
 .site-header {
@@ -662,7 +721,7 @@ textarea {
 }
 
 .site-header .nav ul li a {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   color: #333;
@@ -731,7 +790,7 @@ textarea {
 }
 
 .home .social-links {
-  font-family: 'Old Standard TT';
+  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;

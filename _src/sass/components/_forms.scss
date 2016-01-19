@@ -7,12 +7,12 @@ textarea {
   background: white;
   border: solid 1px shade($body-bg, 10%);
   color: $text-color;
-  display: block;
+  display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
-  max-width: 480px;
   padding: 0.5rem 1rem;
-  width: 100%;
+  @include transition(border-color 0.1s ease-in-out);
+  width: 50%;
 
   &:focus {
     outline: none;
@@ -26,4 +26,59 @@ textarea {
 
 .form-control + .form-control {
   margin-top: 1rem;
+}
+
+.form-control {
+  .form-control-validation {
+    display: none;
+  }
+
+  &.error {
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      border-color: $red;
+    }
+    .form-control-validation {
+      color: $red;
+      display: inline-block;
+      font-size: 16px;
+      padding: 0.5rem 0 0 1rem;
+      margin-right: -0.25rem;
+      width: 50%;
+      vertical-align: top;
+    }
+  }
+}
+
+.contact-form {
+  &.hide {
+    display: none;
+  }
+}
+
+.form-accepted-message {
+  color: shade($green, 20%);
+
+  &.hide {
+    display: none;
+  }
+}
+
+.form-rejected-message {
+  color: shade($red, 20%);
+  font-size: 16px;
+  margin-top: 1rem;
+  width: 50%;
+
+  &.hide {
+    display: none;
+  }
+}
+
+input[name="_gotcha"] {
+  display: none;
 }
