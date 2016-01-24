@@ -6,3 +6,52 @@
     }
   }
 }
+
+.work-intro {
+  margin-bottom: 60px;
+}
+
+.work-item {
+  .work-media {
+    .thumbnail {
+      float: right;
+      padding-right: 40px;
+      width: percentage(2/3);
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .description {
+      width: percentage(1/3);
+      float: right;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    &:before, &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+
+    & + .work-media {
+      padding-top: 120px;
+    }
+
+    &:nth-child(2) {
+      .thumbnail, .description {
+        float: left;
+      }
+
+      .thumbnail {
+        padding-left: 40px;
+        padding-right: 0;
+      }
+    }
+  }
+}

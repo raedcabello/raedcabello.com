@@ -7,7 +7,7 @@ meta_description: >
   experience in multiple disciplines, including visual design, interactive design,
   branding, and research.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://raedcabello.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: raedcabello
 instagram_username: raedcabello
 spotify_username: raedcabello

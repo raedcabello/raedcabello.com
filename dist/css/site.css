@@ -572,21 +572,16 @@ footer.site-footer .colophon-link {
   width: 48px;
 }
 
-@media (min-width: 768px) {
-  footer.site-footer {
-    bottom: 0;
-    left: 5%;
-    position: fixed;
-    width: 90%;
-  }
+.fixed-footer footer.site-footer {
+  bottom: 0;
+  left: 0;
+  padding: 0 calc(50% - 480px);
+  position: fixed;
+  width: 100%;
 }
 
-@media (min-width: 1089px) {
-  footer.site-footer {
-    left: calc(50vw - 490px);
-    max-width: 980px;
-    width: 100%;
-  }
+.fixed-footer footer.site-footer .colophon-link {
+  right: calc(50% - 480px);
 }
 
 input[type="text"],
@@ -840,4 +835,47 @@ input[name="_gotcha"] {
 .work .work-list li {
   font-style: italic;
   margin-bottom: 0.5em;
+}
+
+.work-intro {
+  margin-bottom: 60px;
+}
+
+.work-item .work-media .thumbnail {
+  float: right;
+  padding-right: 40px;
+  width: 66.66667%;
+}
+
+.work-item .work-media .thumbnail img {
+  height: auto;
+  width: 100%;
+}
+
+.work-item .work-media .description {
+  width: 33.33333%;
+  float: right;
+}
+
+.work-item .work-media .description p {
+  font-size: 18px;
+}
+
+.work-item .work-media:before, .work-item .work-media:after {
+  content: ' ';
+  clear: both;
+  display: block;
+}
+
+.work-item .work-media + .work-media {
+  padding-top: 120px;
+}
+
+.work-item .work-media:nth-child(2) .thumbnail, .work-item .work-media:nth-child(2) .description {
+  float: left;
+}
+
+.work-item .work-media:nth-child(2) .thumbnail {
+  padding-left: 40px;
+  padding-right: 0;
 }
