@@ -6,7 +6,7 @@ var EmailInput = require('./email-input');
 var MessageInput = require('./message-input');
 var SubmitContactFormAction = require('../../actions/submit-contact-form');
 
-module.exports = React.createClass({
+var ContactForm = React.createClass({
   getInitialState: function () {
     return {
       accepted: false,
@@ -82,3 +82,5 @@ module.exports = React.createClass({
     );
   }
 });
+
+module.exports = ContactForm;

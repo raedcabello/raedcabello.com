@@ -1,0 +1,22 @@
+---
+layout: page
+---
+<script id="work-data" type="application/json">{{ page.media | jsonify }}</script>
+<div class="work-item">
+  <div class="work-intro">
+    {{ content }}
+  </div>
+  <div class="work-medias">
+    {% for media in page.media %}
+      <div class="work-media">
+        <div class="description">
+          <h4>{{ media.title }}</h4>
+          <p>{{ media.description }}</p>
+        </div>
+        <div class="thumbnail">
+          <img src="{{ media.thumbnail_url }}" alt="{{ media.title }}">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

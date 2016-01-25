@@ -21,15 +21,24 @@ footer.site-footer {
   }
 
   @media (min-width: 768px) {
-    bottom: 0;
-    left: 5%;
-    position: fixed;
-    width: 90%;
+
   }
 
   @media (min-width: 1089px) {
-    left: calc(50vw - 490px);
-    max-width: 980px;
+    
+  }
+}
+
+.fixed-footer {
+  footer.site-footer {
+    bottom: 0;
+    left: 0;
+    padding: 0 calc(50% - 480px);
+    position: fixed;
     width: 100%;
+
+    .colophon-link {
+      right: calc(50% - 480px);
+    }
   }
 }

@@ -6,8 +6,7 @@ bodyClass: about
 ---
 
 I’m a graphic designer born and raised in San Antonio, Tejas.
-I enjoying solving problems through heavy use of simplicity, typography, and whitespace with
-a primary focus on content.
+I enjoying solving problems through heavy use of simplicity, typography, and whitespace with a primary focus on content.
 
 I have a strong interest in 45rpm records, particularly records produced in the 50’s/60’s and recorded in San Antonio. I currently work with 3-time Grammy nominated Chicago based record label Numero Group on releasing some of these archival recordings.
 

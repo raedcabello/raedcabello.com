@@ -6,3 +6,78 @@
     }
   }
 }
+
+.work-intro {
+  margin-bottom: 60px;
+}
+
+.work-item {
+  .work-media {
+    .thumbnail {
+      float: right;
+      padding-right: 40px;
+      width: percentage(2/3);
+
+      a {
+        border: none;
+        display: block;
+
+        &:after {
+          background: transparent;
+          content: '';
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          @include transition(background 0.2s ease-in-out);
+          width: 100%;
+        }
+
+        &:hover, &:focus, &:active {
+          border: none;
+
+          &:after {
+            background: rgba($blue, 0.35);
+          }
+        }
+      }
+
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .description {
+      width: percentage(1/3);
+      float: right;
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    &:before, &:after {
+      content: ' ';
+      clear: both;
+      display: block;
+    }
+
+    & + .work-media {
+      padding-top: 120px;
+    }
+
+    &:nth-child(2) {
+      .thumbnail, .description {
+        float: left;
+      }
+
+      .thumbnail {
+        padding-left: 40px;
+        padding-right: 0;
+      }
+    }
+  }
+}
