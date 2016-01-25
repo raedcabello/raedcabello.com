@@ -13,7 +13,7 @@ var WorkItem = React.createClass({
           <p>{this.props.data.description}</p>
         </div>
         <div className="thumbnail">
-          <WorkThumbnail data={this.props.data} />
+          <WorkThumbnail data={this.props.data}/>
         </div>
       </div>
     );
