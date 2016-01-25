@@ -15,7 +15,7 @@ spotify_username: raedcabello
 collections:
   work:
     output: true
-    permalink: /work/:slug/
+    permalink: /work/:title/
 
 # Build settings
 markdown: kramdown
