@@ -1,25 +1,31 @@
 var React = require('react');
 
 var WorkLightbox = require('./work-lightbox');
+var LazyImage = require('./lazy-image');
+var LightboxState = require('../states/lightbox');
 
 var WorkThumbnail = React.createClass({
-  getInitialState: function () {
-    return {
-      isLightboxVisible: false
-    };
-  },
   toggleLightbox: function (e) {
     e.preventDefault();
-    this.setState({isLightboxVisible: !this.state.isLightboxVisible});
+    LightboxState.show(this.getLightboxContent(this.props.data));
   },
-  closeLightbox: function () {
-    this.setState({isLightboxVisible: false});
+  getLightboxContent: function (data) {
+    return (
+      <div className="lightbox" key="flightbox">
+        <div className="lightbox-header">
+          <h4 className="title">{data.title}</h4>
+          <button className="close" onClick={LightboxState.hide}>Close</button>
+        </div>
+        <div className="lightbox-content">
+          <LazyImage src={data.image_url}/>
+        </div>
+      </div>
+    );
   },
   render: function () {
     return (
       <a onClick={this.toggleLightbox} href="#">
         <img src={this.props.data.thumbnail_url} alt={this.props.data.title} />
-        <WorkLightbox ref="lightbox" data={this.props.data} visible={this.state.isLightboxVisible} onClose={this.closeLightbox} />
       </a>
     );
   }

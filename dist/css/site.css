@@ -767,6 +767,28 @@ img {
   max-width: 100%;
 }
 
+.lazy-image .loading-message {
+  opacity: 1;
+}
+
+.lazy-image img {
+  opacity: 0;
+}
+
+.lazy-image.loaded .loading-message {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.lazy-image.loaded img {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
 .lightbox {
   background: rgba(0, 0, 0, 0.85);
   height: 100%;
@@ -780,6 +802,23 @@ img {
 
 .lightbox .lightbox-content {
   padding: 0 5vw 5vh 5vw;
+}
+
+.lightbox .lightbox-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.lightbox .lightbox-content .lazy-image .loading-message {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .lightbox .lightbox-header {
@@ -809,15 +848,27 @@ img {
   height: 24px;
 }
 
-.lightbox.lightbox-appear {
+.lightbox.lightbox-enter {
   opacity: 0;
 }
 
-.lightbox.lightbox-appear.lightbox-appear-active {
+.lightbox.lightbox-enter.lightbox-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.lightbox.lightbox-leave {
+  opacity: 1;
+  overflow-y: hidden;
+}
+
+.lightbox.lightbox-leave.lightbox-leave-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  -moz-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 body.has-lightbox {

@@ -10,6 +10,23 @@
 
   .lightbox-content {
     padding: 0 5vw 5vh 5vw;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 1280px;
+    }
+
+    .lazy-image .loading-message {
+      color: white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 3em 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
   }
 
   .lightbox-header {
@@ -39,15 +56,26 @@
     }
   }
 
-  &.lightbox-appear {
+  &.lightbox-enter {
     // background: rgba(black, 0);
     opacity: 0;
+    // overflow-y: hidden;
   }
 
-  &.lightbox-appear.lightbox-appear-active {
+  &.lightbox-enter.lightbox-enter-active {
     // background: rgba(black, 0.85);
     opacity: 1;
-    @include transition(opacity 0.2s ease-in);
+    @include transition(opacity 200ms ease-in);
+  }
+
+  &.lightbox-leave {
+    opacity: 1;
+    overflow-y: hidden;
+  }
+
+  &.lightbox-leave.lightbox-leave-active {
+    opacity: 0;
+    @include transition(opacity 200ms ease-out);
   }
 }
 

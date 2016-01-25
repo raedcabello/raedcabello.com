@@ -1,0 +1,21 @@
+.lazy-image {
+  .loading-message {
+    opacity: 1;
+  }
+
+  img {
+    opacity: 0;
+  }
+
+  &.loaded {
+    .loading-message {
+      opacity: 0;
+      @include transition(opacity 0.2s ease-out);
+    }
+
+    img {
+      opacity: 1;
+      @include transition(opacity 0.2s ease-in);
+    }
+  }
+}
