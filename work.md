@@ -9,6 +9,6 @@ Below is a sampling of work that will cross several disciplines: Visual, interac
 
 <ul class="work-list">
   {% for work in site.work reversed %}
-  <li><a href="{{ work.url }}">{{ work.name }}</a>: {{ work.involvement }}</li>
+  <li><a href="{{ site.baseurl }}{{ work.url }}">{{ work.name }}</a>: {{ work.involvement }}</li>
   {% endfor %}
 </ul>
