@@ -18,7 +18,33 @@
       padding-right: 40px;
       width: percentage(2/3);
 
+      a {
+        border: none;
+        display: block;
+
+        &:after {
+          background: transparent;
+          content: '';
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          @include transition(background 0.2s ease-in-out);
+          width: 100%;
+        }
+
+        &:hover, &:focus, &:active {
+          border: none;
+
+          &:after {
+            background: rgba($blue, 0.35);
+          }
+        }
+      }
+
       img {
+        display: block;
         height: auto;
         width: 100%;
       }

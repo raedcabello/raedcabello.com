@@ -1,14 +1,14 @@
 ---
 layout: page
 ---
-<script id="work-media-data">{{ page.media | jsonify }}</script>
+<script id="work-data" type="application/json">{{ page.media | jsonify }}</script>
 <div class="work-item">
   <div class="work-intro">
     {{ content }}
   </div>
-  <div>
+  <div class="work-medias">
     {% for media in page.media %}
-      <div class="work-media-item">
+      <div class="work-media">
         <div class="description">
           <h4>{{ media.title }}</h4>
           <p>{{ media.description }}</p>

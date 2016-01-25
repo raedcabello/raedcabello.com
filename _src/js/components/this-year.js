@@ -1,6 +1,6 @@
 var React = require('react');
 
-module.exports = React.createClass({
+var ThisYear = React.createClass({
   getInitialState: function () {
     var year = new Date();
     year = year.getFullYear();
@@ -13,3 +13,5 @@ module.exports = React.createClass({
     return <span>{this.state.year}</span>;
   }
 });
+
+module.exports = ThisYear;

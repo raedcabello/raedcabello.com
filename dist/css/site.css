@@ -762,6 +762,68 @@ input[name="_gotcha"] {
   }
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.lightbox {
+  background: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 40;
+}
+
+.lightbox .lightbox-content {
+  padding: 0 5vw 5vh 5vw;
+}
+
+.lightbox .lightbox-header {
+  height: 10vh;
+  padding: calc(5vh - 12px) 5vw;
+  position: relative;
+}
+
+.lightbox .lightbox-header .title {
+  color: white;
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0px 1px 4px black;
+}
+
+.lightbox .lightbox-header .close {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  height: 24px;
+}
+
+.lightbox.lightbox-appear {
+  opacity: 0;
+}
+
+.lightbox.lightbox-appear.lightbox-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+body.has-lightbox {
+  overflow-y: hidden;
+}
+
 .section {
   padding: 50px calc(50vw - 480px);
   text-align: center;
@@ -847,7 +909,35 @@ input[name="_gotcha"] {
   width: 66.66667%;
 }
 
+.work-item .work-media .thumbnail a {
+  border: none;
+  display: block;
+}
+
+.work-item .work-media .thumbnail a:after {
+  background: transparent;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  width: 100%;
+}
+
+.work-item .work-media .thumbnail a:hover, .work-item .work-media .thumbnail a:focus, .work-item .work-media .thumbnail a:active {
+  border: none;
+}
+
+.work-item .work-media .thumbnail a:hover:after, .work-item .work-media .thumbnail a:focus:after, .work-item .work-media .thumbnail a:active:after {
+  background: rgba(107, 198, 216, 0.35);
+}
+
 .work-item .work-media .thumbnail img {
+  display: block;
   height: auto;
   width: 100%;
 }
