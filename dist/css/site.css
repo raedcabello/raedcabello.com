@@ -808,6 +808,7 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 1280px;
+  width: 100%;
 }
 
 .lightbox .lightbox-content .lazy-image .loading-message {
@@ -1012,11 +1013,23 @@ body.has-lightbox {
   padding-top: 120px;
 }
 
-.work-item .work-media:nth-child(2) .thumbnail, .work-item .work-media:nth-child(2) .description {
+.work-item .work-media:nth-child(2n) .thumbnail, .work-item .work-media:nth-child(2n) .description {
   float: left;
 }
 
-.work-item .work-media:nth-child(2) .thumbnail {
+.work-item .work-media:nth-child(2n) .thumbnail {
   padding-left: 40px;
   padding-right: 0;
+}
+
+@media (max-width: 699px) {
+  .work-item .work-media .thumbnail, .work-item .work-media .description {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+  .work-item .work-media:nth-child(2n) .thumbnail, .work-item .work-media:nth-child(2n) .description {
+    float: none;
+    padding: 0;
+  }
 }

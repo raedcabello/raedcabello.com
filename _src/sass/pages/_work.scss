@@ -69,7 +69,7 @@
       padding-top: 120px;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2n) {
       .thumbnail, .description {
         float: left;
       }
@@ -77,6 +77,21 @@
       .thumbnail {
         padding-left: 40px;
         padding-right: 0;
+      }
+    }
+
+    @media (max-width: 699px) {
+      .thumbnail, .description {
+        float: none;
+        padding: 0;
+        width: 100%;
+      }
+
+      &:nth-child(2n) {
+        .thumbnail, .description {
+          float: none;
+          padding: 0;
+        }
       }
     }
   }
