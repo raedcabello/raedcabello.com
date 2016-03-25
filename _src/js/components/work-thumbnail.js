@@ -1,6 +1,5 @@
 var React = require('react');
 
-var WorkLightbox = require('./work-lightbox');
 var LazyImage = require('./lazy-image');
 var LightboxState = require('../states/lightbox');
 

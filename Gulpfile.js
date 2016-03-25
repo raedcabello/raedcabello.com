@@ -6,7 +6,6 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
-var react = require('gulp-react');
 var reactify = require('reactify');
 
 gulp.task('sass', function () {

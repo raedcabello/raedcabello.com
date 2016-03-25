@@ -1,6 +1,4 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 var WorkThumbnail = require('./work-thumbnail');
 

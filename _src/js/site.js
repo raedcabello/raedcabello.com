@@ -11,6 +11,11 @@ if(document.getElementById('contact-form')) {
   ReactDOM.render(<ContactForm />, document.getElementById('contact-form'));
 }
 
+if(document.getElementById('contact-trigger')) {
+  var ContactFormTrigger = require('./components/contact-form-trigger');
+  ReactDOM.render(<ContactFormTrigger />, document.getElementById('contact-trigger'));
+}
+
 if(document.querySelector('.work-medias')) {
   var WorkItemList = require('./components/work-item-list');
   var workData = JSON.parse(document.querySelector('#work-data').textContent);
@@ -18,6 +23,11 @@ if(document.querySelector('.work-medias')) {
   ReactDOM.render(<WorkItemList data={workData} />, document.querySelector('.work-medias'));
 }
 
+var Modal = require('./components/modal');
+
+var modalContainer = document.createElement('div');
+document.body.appendChild(modalContainer);
+ReactDOM.render(<Modal />, modalContainer);
 
 if(document.body.clientHeight > window.innerHeight) {
   document.body.classList.remove('fixed-footer');

@@ -3,11 +3,13 @@
   <nav class="nav">
     {% assign first_segment = page.url | strip | split: '/' %}
     {% assign first_segment = first_segment[1] %}
+    {% comment %}
     <ul>
       <li{% if page.url == '/' %} class="active"{% endif %}><a href="/">Home</a></li>
       <li{% if first_segment == 'work' %} class="active"{% endif %}><a href="/work/">Work</a></li>
       <li{% if first_segment == 'about' %} class="active"{% endif %}><a href="/about/">About</a></li>
       <li{% if first_segment == 'contact' %} class="active"{% endif %}><a href="/contact/">Contact</a></li>
     </ul>
+    {% endcomment %}
   </nav>
 </header>

@@ -1,0 +1,93 @@
+.modal {
+  background: rgba(black, 0.5);
+  height: 100%;
+  left: 0;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 40;
+
+  .modal-content {
+    background: white;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow-y: auto;
+    width: 100vw;
+
+    @media (min-width: 700px) {
+      height: auto;
+      margin: 10vh auto;
+      max-height: 80vh;
+      max-width: 700px;
+      width: 80vw;
+    }
+  }
+
+  .modal-header {
+    margin-bottom: 1rem;
+
+    .close {
+      background: transparent;
+      border: none;
+      color: $blue;
+      cursor: pointer;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      float: right;
+      height: 24px;
+    }
+
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+  }
+
+  &.modal-enter {
+    // background: rgba(black, 0);
+    opacity: 0;
+    // overflow-y: hidden;
+
+    .modal-content {
+      transform: translateY(100vh);
+    }
+  }
+
+  &.modal-enter.modal-enter-active {
+    // background: rgba(black, 0.85);
+    opacity: 1;
+    @include transition(opacity 200ms ease-in);
+
+    .modal-content {
+      transform: translateY(0%);
+      transition: transform 300ms 100ms ease-out;
+    }
+  }
+
+  &.modal-leave {
+    opacity: 1;
+    overflow-y: hidden;
+
+    .modal-content {
+      transform: translateY(0);
+    }
+  }
+
+  &.modal-leave.modal-leave-active {
+    opacity: 0;
+    @include transition(opacity 200ms 200ms ease-out);
+
+    .modal-content {
+      transform: translateY(100vh);
+      transition: transform 300ms ease-in;
+    }
+  }
+}
+
+body.has-modal {
+  overflow-y: hidden;
+}
