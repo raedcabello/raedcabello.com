@@ -549,27 +549,61 @@ body, html {
   width: 90%;
 }
 
+.modal.colophon .modal-header {
+  float: right;
+  z-index: 1;
+}
+
+.modal.colophon h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.modal.colophon h4 {
+  font-size: 1rem;
+}
+
+.modal.colophon p {
+  font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+  .modal.colophon p {
+    font-size: 0.75rem;
+  }
+}
+
 footer.site-footer {
   background: #f7f6f0;
   font-size: 18px;
   height: 120px;
-  line-height: 120px;
+  line-height: 60px;
   text-align: center;
 }
 
-footer.site-footer .colophon-link {
+footer.site-footer #colophon-link {
+  -webkit-appearance: none;
   background: #333;
   border-radius: 24px;
+  border: 0;
   color: #f7f6f0;
   display: block;
   font-size: 28px;
   height: 48px;
   line-height: 52px;
-  position: absolute;
-  right: 0;
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
   text-align: center;
-  top: 36px;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
   width: 48px;
+}
+
+footer.site-footer #colophon-link:hover, footer.site-footer #colophon-link:active {
+  background: #6bc6d8;
+  outline: none;
 }
 
 .fixed-footer footer.site-footer {

@@ -6,6 +6,11 @@ if(document.getElementById('year')) {
   ReactDOM.render(<ThisYear />, document.getElementById('year'));
 }
 
+if(document.getElementById('colophon-link')) {
+  var ColophonLink = require('./components/colophon-link');
+  ReactDOM.render(<ColophonLink />, document.getElementById('colophon-link'));
+}
+
 if(document.getElementById('contact-form')) {
   var ContactForm = require('./components/contact-form');
   ReactDOM.render(<ContactForm />, document.getElementById('contact-form'));

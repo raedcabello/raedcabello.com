@@ -1,0 +1,25 @@
+.modal.colophon {
+  .modal-header {
+    float: right;
+    z-index: 1;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 700px) {
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
