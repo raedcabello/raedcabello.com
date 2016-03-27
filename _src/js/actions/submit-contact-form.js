@@ -1,7 +1,7 @@
 var Q = require('q');
 var request = require('superagent');
 
-var CONTACT_INBOX = 'raedcabello@mailinator.com';
+var CONTACT_INBOX = 'raedcabello@gmail.com';
 
 module.exports = function (data) {
   return Q.Promise(function (resolve, reject) {
