@@ -492,9 +492,9 @@ p {
 }
 
 .btn {
-  background: #cccccc;
+  background: #ced0d0;
   border: solid 1px transparent;
-  color: #333;
+  color: #3C4244;
   display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
@@ -508,7 +508,7 @@ p {
 }
 
 .btn:hover, .btn:focus, .btn:active {
-  border-color: #999999;
+  border-color: #9ea1a2;
   outline: none;
 }
 
@@ -627,7 +627,7 @@ input[type="number"],
 textarea {
   background: white;
   border: solid 1px #deddd8;
-  color: #333;
+  color: #3C4244;
   display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
@@ -745,7 +745,7 @@ input[name="_gotcha"] {
   font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  color: #333;
+  color: #3C4244;
   display: inline-block;
   font-size: 20px;
   padding: 0 0.5em;
