@@ -475,7 +475,7 @@ h3 {
 
 a {
   border-bottom: solid 1px transparent;
-  color: #6bc6d8;
+  color: #939da3;
   text-decoration: none;
   -webkit-transition: border-bottom 0.1s ease-in-out;
   -moz-transition: border-bottom 0.1s ease-in-out;
@@ -483,6 +483,7 @@ a {
 }
 
 a:hover {
+  color: #6bc6d8;
   border-bottom: solid 1px #6bc6d8;
 }
 
@@ -576,14 +577,14 @@ body, html {
 footer.site-footer {
   background: #f7f6f0;
   font-size: 18px;
-  height: 120px;
+  height: 80px;
   line-height: 60px;
   text-align: center;
 }
 
 footer.site-footer #colophon-link {
   -webkit-appearance: none;
-  background: #333;
+  background: #939da3;
   border-radius: 24px;
   border: 0;
   color: #f7f6f0;
@@ -715,15 +716,6 @@ input[name="_gotcha"] {
   font-size: 28px;
   margin: 0 auto 1em auto;
   text-align: center;
-}
-
-.site-header .site-title a {
-  color: #333;
-}
-
-.site-header .site-title a:hover, .site-header .site-title a:active {
-  color: #333;
-  border-bottom: none;
 }
 
 @media (min-width: 768px) {
