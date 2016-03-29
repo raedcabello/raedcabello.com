@@ -16,7 +16,10 @@ var ContactFormTrigger = React.createClass({
           <div className="modal-header">
             <button className="close" onClick={this.hideModal}>Close</button>
           </div>
-          <p>Interested in working together? How about some coffee or a Spurs game? Drop me a line. I promise not to spam you.</p>
+          <p>
+            Interested in working together? <br />
+            Drop me a line. I promise not to spam you.
+          </p>
           <ContactForm />
         </div>
       </div>

@@ -77,7 +77,7 @@ var ContactForm = React.createClass({
           </div>
         </form>
         <div className={rejectedClass}>Aw man, something went wrong while sending your message. This is probably my fault. You can try to send it again, or just reach out to me on <a href="https://twitter.com/raedcabello" target="_blank">Twitter</a> instead.</div>
-        <div className={acceptedClass}>{'Thanks for your message. I’ll get back to you soon!'}</div>
+        <div className={acceptedClass}>Thanks for your message. <br/>I’ll get back to you shortly.</div>
       </div>
     );
   }

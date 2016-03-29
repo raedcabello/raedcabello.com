@@ -31,13 +31,17 @@
     .close {
       background: transparent;
       border: none;
-      color: $blue;
+      color: $cool-gray;
       cursor: pointer;
       font-family: Helvetica, Arial, sans-serif;
       font-size: 14px;
       font-weight: bold;
       float: right;
       height: 24px;
+
+      &:hover {
+        color: $blue;
+      }
     }
 
     &:after {

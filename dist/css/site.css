@@ -635,7 +635,7 @@ textarea {
   -webkit-transition: border-color 0.1s ease-in-out;
   -moz-transition: border-color 0.1s ease-in-out;
   transition: border-color 0.1s ease-in-out;
-  width: 50%;
+  width: 65%;
 }
 
 input[type="text"]:focus,
@@ -673,9 +673,9 @@ textarea {
   color: #d76a6a;
   display: inline-block;
   font-size: 16px;
-  padding: 0.5rem 0 0 1rem;
+  padding: 0 0 0 1rem;
   margin-right: -0.25rem;
-  width: 50%;
+  width: 35%;
   vertical-align: top;
 }
 
@@ -939,13 +939,17 @@ body.has-lightbox {
 .modal .modal-header .close {
   background: transparent;
   border: none;
-  color: #6bc6d8;
+  color: #939da3;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   float: right;
   height: 24px;
+}
+
+.modal .modal-header .close:hover {
+  color: #6bc6d8;
 }
 
 .modal .modal-header:after {
