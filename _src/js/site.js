@@ -34,6 +34,6 @@ var modalContainer = document.createElement('div');
 document.body.appendChild(modalContainer);
 ReactDOM.render(<Modal />, modalContainer);
 
-if(document.body.clientHeight > window.innerHeight) {
+if(window.innerHeight < 600 || document.body.clientHeight + 120 > window.innerHeight) {
   document.body.classList.remove('fixed-footer');
 }

@@ -1,7 +1,10 @@
 .site-header {
-  margin-bottom: 56px;
   padding: 36px 0;
   z-index: 20;
+
+  @media (min-height: 600px) {
+    margin-bottom: 56px;
+  }
 
   .site-title {
     font-size: 28px;

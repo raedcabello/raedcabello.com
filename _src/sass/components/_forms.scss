@@ -12,11 +12,15 @@ textarea {
   font-size: 16px;
   padding: 0.5rem 1rem;
   @include transition(border-color 0.1s ease-in-out);
-  width: 65%;
+  width: 100%;
 
   &:focus {
     outline: none;
     border-color: $blue;
+  }
+
+  @media (min-width: 500px) {
+    width: 65%;
   }
 }
 
@@ -42,14 +46,20 @@ textarea {
     textarea {
       border-color: $red;
     }
+
     .form-control-validation {
       color: $red;
       display: inline-block;
       font-size: 16px;
-      padding: 0 0 0 1rem;
+      padding: 1rem 0 0 0;
       margin-right: -0.25rem;
-      width: 35%;
+      width: 100%;
       vertical-align: top;
+
+      @media (min-width: 500px) {
+        padding: 0 0 0 1rem;
+        width: 35%;
+      }
     }
   }
 }
