@@ -754,6 +754,21 @@ input[name="_gotcha"] {
     font-size: 20px;
     text-align: left;
   }
+  .site-header .site-title > a:before {
+    background: #939da3;
+    border-radius: 50%;
+    content: ' ';
+    display: inline-block;
+    height: 14px;
+    margin-right: 0.4em;
+    -webkit-transition: background 0.1s ease-out;
+    -moz-transition: background 0.1s ease-out;
+    transition: background 0.1s ease-out;
+    width: 14px;
+  }
+  .site-header .site-title > a:hover:before {
+    background: #6bc6d8;
+  }
 }
 
 .site-header .nav {
