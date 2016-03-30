@@ -27,6 +27,10 @@ footer.site-footer {
       background: $blue;
       outline: none;
     }
+
+    & > span {
+      display: block;
+    }
   }
 
   @media (min-width: 768px) {

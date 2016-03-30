@@ -613,6 +613,10 @@ footer.site-footer #colophon-link:hover, footer.site-footer #colophon-link:activ
   outline: none;
 }
 
+footer.site-footer #colophon-link > span {
+  display: block;
+}
+
 .fixed-footer footer.site-footer {
   bottom: 0;
   left: 0;
