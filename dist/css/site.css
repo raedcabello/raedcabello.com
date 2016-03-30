@@ -1134,7 +1134,7 @@ body.has-modal {
 }
 
 @media (min-width: 575px) {
-  .home .social-links li {
+  .home .social-links {
     font-size: 24px;
   }
 }
