@@ -538,10 +538,8 @@ body, html {
   background-color: #f7f6f0;
 }
 
-@media (min-width: 768px) {
-  body.fixed-footer {
-    padding-bottom: 120px;
-  }
+body {
+  min-height: 100vh;
 }
 
 #wrap {
@@ -765,6 +763,9 @@ input[name="_gotcha"] {
     -moz-transition: background 0.1s ease-out;
     transition: background 0.1s ease-out;
     width: 14px;
+  }
+  .site-header .site-title > a:hover {
+    border-color: transparent;
   }
   .site-header .site-title > a:hover:before {
     background: #6bc6d8;
@@ -1063,7 +1064,7 @@ body.has-modal {
 .home .huge {
   font-size: 28px;
   line-height: 1.25;
-  padding: 0 0 1em 0;
+  padding: 0.1em 0;
 }
 
 .home .huge p {
@@ -1073,7 +1074,6 @@ body.has-modal {
 @media (min-width: 768px) {
   .home .huge {
     font-size: 48px;
-    padding: 0.1em 0;
   }
 }
 
@@ -1112,6 +1112,10 @@ body.has-modal {
 
 .home .social-links li a:hover.spotify, .home .social-links li a:active.spotify {
   color: #66de90;
+}
+
+.home .social-links li a:hover.dribbble, .home .social-links li a:active.dribbble {
+  color: #ea4c89;
 }
 
 .home .social-links li a:hover.email, .home .social-links li a:active.email {

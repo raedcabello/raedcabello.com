@@ -4,10 +4,13 @@ body, html {
 
 body.fixed-footer {
   @media (min-width: 768px) {
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
   }
 }
 
+body {
+  min-height: 100vh;
+}
 
 #wrap {
   margin: 0 auto;

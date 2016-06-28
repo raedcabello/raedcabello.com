@@ -8,7 +8,7 @@
   .huge {
     font-size: 28px;
     line-height: 1.25;
-    padding: 0 0 1em 0;
+    padding: 0.1em 0;
 
     p {
       margin: 0;
@@ -16,7 +16,6 @@
 
     @media (min-width: 768px) {
       font-size: 48px;
-      padding: 0.1em 0;
     }
   }
 
@@ -47,6 +46,10 @@
 
           &.spotify {
             color: $spotify-green;
+          }
+
+          &.dribbble {
+            color: $dribbble-pink;
           }
 
           &.email {
