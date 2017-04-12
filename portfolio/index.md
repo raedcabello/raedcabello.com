@@ -15,7 +15,9 @@ Below is a sampling of work that will cross several disciplines: Visual, interac
       {% for item in work.workItems %}
       <li>
       {% if item.url %}
-        <a href="{{ item.url }}">{{ item.name }}</a>
+        <a href="{{ item.url | replace: "__CLOUD_FILES_URL__", site.cloud_files_url }}">
+        {{ item.name }}
+        </a>
       {% else %}
         {{ item }}
       {% endif %}
