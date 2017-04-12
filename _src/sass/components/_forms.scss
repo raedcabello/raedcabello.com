@@ -11,7 +11,7 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   padding: 0.5rem 1rem;
-  @include transition(border-color 0.1s ease-in-out);
+  transition: border-color 0.1s ease-in-out; -webkit-transition: border-color 0.1s ease-in-out;
   width: 100%;
 
   &:focus {

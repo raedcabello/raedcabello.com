@@ -20,7 +20,7 @@ footer.site-footer {
     padding: 0;
     outline: none;
     text-align: center;
-    @include transition(background 0.2s ease-in-out);
+    transition: background 0.2s ease-in-out; -webkit-transition: background 0.2s ease-in-out;
     width: 48px;
 
     &:hover, &:active {

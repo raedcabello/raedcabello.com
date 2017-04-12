@@ -1,8 +1,31 @@
 .work {
   .work-list  {
-    li {
-      font-style: italic;
-      margin-bottom: 0.5em;
+    @include open-sans();
+    padding: 0;
+    list-style-type: none;
+
+    & > li {
+      margin-bottom: 60px;
+
+      & > ul {
+        @include open-sans();
+        color: $cool-gray;
+        font-weight: 700;
+        font-size: 80%;
+        list-style-type: none;
+        padding-left: 0.0em;
+
+        & > li {
+          margin-top: 1em;
+          text-transform: uppercase;
+
+          &:before {
+            display: inline-block;
+            content: '–';
+            margin-right: 0.5em;
+          }
+        }
+      }
     }
   }
 }
@@ -30,7 +53,8 @@
           left: 0;
           position: absolute;
           top: 0;
-          @include transition(background 0.2s ease-in-out);
+          transition: background 0.2s ease-in-out;
+          -webkit-transition: background 0.2s ease-in-out;
           width: 100%;
         }
 
