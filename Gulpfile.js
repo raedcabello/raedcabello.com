@@ -20,12 +20,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('jekyll', function (gulpCallBack) {
+gulp.task('jekyll', function (callback) {
   var spawn = require('child_process').spawn;
   var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit'});
 
-  jekyll.on('exit', function(code) {
-      gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
+  jekyll.on('exit', function (code) {
+    callback(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
   });
 });
 
@@ -33,8 +33,8 @@ gulp.task('jekyll:watch', function (callback) {
   var spawn = require('child_process').spawn;
   var jekyll = spawn('jekyll', ['build', '--watch'], {stdio: 'inherit'});
 
-  jekyll.on('exit', function(code) {
-      gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
+  jekyll.on('exit', function (code) {
+    callback(code === 0 ? null : 'ERROR: Jekyll process exited with code: ' + code);
   });
 });
 
@@ -58,16 +58,14 @@ gulp.task('js', function () {
       .on('error', gutil.log)
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('./dist/js/'));
+  } catch (e) {
+    console.log(e);
   }
-  catch(e) {
-    console.log('that sucks');
-  }
-
 });
 
 gulp.task('watch', function () {
   var spawn = require('child_process').spawn;
-  var jekyll = spawn('jekyll', ['build', '--watch'], {stdio: 'inherit'});
+  spawn('jekyll', ['build', '--watch'], {stdio: 'inherit'});
 
   gulp.watch('./_src/sass/**/*.scss', ['sass']);
   gulp.watch('./_src/js/**/*.js', ['js']);

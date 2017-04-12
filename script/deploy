@@ -8,13 +8,11 @@ export RS_API_KEY=${RACKSPACE_APIKEY}
 export RS_REGION_NAME=${CF_REGION:-DFW}
 container=${CF_CONTAINER}
 
-alias rack="/tmp/rack-1.1.1"
-
 jekyll build
 
 files=$(find _site -type f)
 
 for file in ${files}; do
   objname=$(echo ${file} | sed s/_site\\///)
-  rack files object upload --container ${container} --name ${objname} --file ${file}
+  /tmp/rack-1.1.1 files object upload --container ${container} --name ${objname} --file ${file}
 done

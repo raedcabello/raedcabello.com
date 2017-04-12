@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -400,10 +401,17 @@ body * {
 }
 
 @font-face {
-  font-family: 'Old Standard TT';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DAjWwMcLosnYS7_elQHKBmA.woff) format("woff"), url(https://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DJDiI8zI8NGcbDOKyTTsY20.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
 }
 
 @font-face {
@@ -436,8 +444,8 @@ body * {
 
 body, html {
   font-family: 'Vollkorn', Georgia, "Times New Roman", Times, serif;
-  background: #f7f6f0;
-  font-size: 18px;
+  background: #f5f5f5;
+  font-size: 16px;
   letter-spacing: -0.03em;
   -webkit-font-smoothing: antialiased;
 }
@@ -449,21 +457,21 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
 }
 
 h2 {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -473,18 +481,27 @@ h3 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+  font-size: 0.77778rem;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
 a {
   border-bottom: solid 1px transparent;
-  color: #939da3;
+  color: #979797;
   text-decoration: none;
-  -webkit-transition: border-bottom 0.1s ease-out, color 0.1s ease-out;
-  -moz-transition: border-bottom 0.1s ease-out, color 0.1s ease-out;
   transition: border-bottom 0.1s ease-out, color 0.1s ease-out;
+  -webkit-transition: border-bottom 0.1s ease-out, color 0.1s ease-out;
 }
 
 a:hover {
-  color: #6bc6d8;
-  border-bottom: solid 1px #6bc6d8;
+  color: #3f51b5;
+  border-bottom: solid 1px #3f51b5;
 }
 
 p {
@@ -492,9 +509,9 @@ p {
 }
 
 .btn {
-  background: #ced0d0;
+  background: #d0d0d0;
   border: solid 1px transparent;
-  color: #3C4244;
+  color: #424242;
   display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
@@ -502,13 +519,12 @@ p {
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: none;
-  -webkit-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
-  -moz-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
   transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
+  -webkit-transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
 }
 
 .btn:hover, .btn:focus, .btn:active {
-  border-color: #9ea1a2;
+  border-color: #a1a1a1;
   outline: none;
 }
 
@@ -535,7 +551,7 @@ p {
 }
 
 body, html {
-  background-color: #f7f6f0;
+  background-color: #f5f5f5;
 }
 
 body {
@@ -565,7 +581,7 @@ body {
 }
 
 .modal.colophon p {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -578,7 +594,7 @@ body {
 }
 
 footer.site-footer {
-  background: #f7f6f0;
+  background: #f5f5f5;
   font-size: 18px;
   height: 80px;
   line-height: 60px;
@@ -588,10 +604,10 @@ footer.site-footer {
 
 footer.site-footer #colophon-link {
   -webkit-appearance: none;
-  background: #939da3;
+  background: #979797;
   border-radius: 24px;
   border: 0;
-  color: #f7f6f0;
+  color: #f5f5f5;
   display: block;
   font-size: 28px;
   height: 48px;
@@ -600,9 +616,8 @@ footer.site-footer #colophon-link {
   padding: 0;
   outline: none;
   text-align: center;
-  -webkit-transition: background 0.2s ease-in-out;
-  -moz-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out;
   width: 48px;
 }
 
@@ -631,15 +646,14 @@ input[type="email"],
 input[type="number"],
 textarea {
   background: white;
-  border: solid 1px #deddd8;
-  color: #3C4244;
+  border: solid 1px #dddddd;
+  color: #424242;
   display: inline-block;
   font-family: sans-serif;
   font-size: 16px;
   padding: 0.5rem 1rem;
-  -webkit-transition: border-color 0.1s ease-in-out;
-  -moz-transition: border-color 0.1s ease-in-out;
   transition: border-color 0.1s ease-in-out;
+  -webkit-transition: border-color 0.1s ease-in-out;
   width: 100%;
 }
 
@@ -734,12 +748,6 @@ input[name="_gotcha"] {
   z-index: 20;
 }
 
-@media (min-height: 600px) {
-  .site-header {
-    margin-bottom: 56px;
-  }
-}
-
 .site-header .site-title {
   font-size: 28px;
   margin: 0 auto 1em auto;
@@ -748,27 +756,16 @@ input[name="_gotcha"] {
 
 @media (min-width: 768px) {
   .site-header .site-title {
-    float: left;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
   }
-  .site-header .site-title > a:before {
-    background: #939da3;
-    border-radius: 50%;
-    content: ' ';
-    display: inline-block;
-    height: 14px;
-    margin-right: 0.4em;
-    -webkit-transition: background 0.1s ease-out;
-    -moz-transition: background 0.1s ease-out;
-    transition: background 0.1s ease-out;
-    width: 14px;
+  .site-header .site-title > a {
+    color: #3f51b5;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .site-header .site-title > a:hover {
     border-color: transparent;
-  }
-  .site-header .site-title > a:hover:before {
-    background: #6bc6d8;
   }
 }
 
@@ -788,10 +785,10 @@ input[name="_gotcha"] {
 }
 
 .site-header .nav ul li a {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #3C4244;
+  color: #424242;
   display: inline-block;
   font-size: 20px;
   padding: 0 0.5em;
@@ -828,12 +825,6 @@ input[name="_gotcha"] {
   }
 }
 
-@media (min-width: 768px) {
-  .site-header {
-    margin-bottom: 15vh;
-  }
-}
-
 img {
   height: auto;
   max-width: 100%;
@@ -849,16 +840,14 @@ img {
 
 .lazy-image.loaded .loading-message {
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
 }
 
 .lazy-image.loaded img {
   opacity: 1;
-  -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
+  -webkit-transition: opacity 0.2s ease-in;
 }
 
 .lightbox {
@@ -927,9 +916,8 @@ img {
 
 .lightbox.lightbox-enter.lightbox-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
+  -webkit-transition: opacity 200ms ease-in;
 }
 
 .lightbox.lightbox-leave {
@@ -939,9 +927,8 @@ img {
 
 .lightbox.lightbox-leave.lightbox-leave-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-out;
-  -moz-transition: opacity 200ms ease-out;
   transition: opacity 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out;
 }
 
 body.has-lightbox {
@@ -986,7 +973,7 @@ body.has-lightbox {
 .modal .modal-header .close {
   background: transparent;
   border: none;
-  color: #939da3;
+  color: #979797;
   cursor: pointer;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -1015,9 +1002,8 @@ body.has-lightbox {
 
 .modal.modal-enter.modal-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
+  -webkit-transition: opacity 200ms ease-in;
 }
 
 .modal.modal-enter.modal-enter-active .modal-content {
@@ -1036,9 +1022,8 @@ body.has-lightbox {
 
 .modal.modal-leave.modal-leave-active {
   opacity: 0;
-  -webkit-transition: opacity 200ms 200ms ease-out;
-  -moz-transition: opacity 200ms 200ms ease-out;
   transition: opacity 200ms 200ms ease-out;
+  -webkit-transition: opacity 200ms 200ms ease-out;
 }
 
 .modal.modal-leave.modal-leave-active .modal-content {
@@ -1061,10 +1046,24 @@ body.has-modal {
   }
 }
 
+.home .site-header .site-title {
+  display: none;
+}
+
+.home .intro {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 700;
+  font-size: 80%;
+  color: #3f51b5;
+  text-transform: uppercase;
+}
+
 .home .huge {
   font-size: 28px;
   line-height: 1.25;
-  padding: 0.1em 0;
+  padding: 0.5em 0;
 }
 
 .home .huge p {
@@ -1078,9 +1077,10 @@ body.has-modal {
 }
 
 .home .social-links {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-weight: 700;
   font-size: 4vw;
   list-style-type: none;
   margin: 0;
@@ -1092,10 +1092,9 @@ body.has-modal {
 }
 
 .home .social-links li a {
-  color: #939da3;
-  -webkit-transition: color 0.1s ease-in-out;
-  -moz-transition: color 0.1s ease-in-out;
+  color: #979797;
   transition: color 0.1s ease-in-out;
+  -webkit-transition: color 0.1s ease-in-out;
 }
 
 .home .social-links li a:hover, .home .social-links li a:active {
@@ -1131,7 +1130,7 @@ body.has-modal {
 }
 
 .home .social-links li + li:before {
-  color: #939da3;
+  color: #979797;
   content: '/';
   left: -0.85em;
   position: absolute;
@@ -1139,13 +1138,42 @@ body.has-modal {
 
 @media (min-width: 575px) {
   .home .social-links {
-    font-size: 24px;
+    font-size: 19px;
   }
 }
 
-.work .work-list li {
-  font-style: italic;
-  margin-bottom: 0.5em;
+.work .work-list {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work .work-list > li {
+  margin-bottom: 60px;
+}
+
+.work .work-list > li > ul {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #979797;
+  font-weight: 700;
+  font-size: 80%;
+  list-style-type: none;
+  padding-left: 0.0em;
+}
+
+.work .work-list > li > ul > li {
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+.work .work-list > li > ul > li:before {
+  display: inline-block;
+  content: '–';
+  margin-right: 0.5em;
 }
 
 .work-intro {
@@ -1171,9 +1199,8 @@ body.has-modal {
   left: 0;
   position: absolute;
   top: 0;
-  -webkit-transition: background 0.2s ease-in-out;
-  -moz-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out;
   width: 100%;
 }
 

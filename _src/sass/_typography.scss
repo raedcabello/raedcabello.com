@@ -1,7 +1,7 @@
 body, html {
   @include vollkorn();
   background: $body-bg;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -0.03em;
   -webkit-font-smoothing: antialiased;
 
@@ -11,17 +11,17 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include old-standard();
+  @include open-sans();
   margin: 0;
 }
 
 h1 {
-  @include old-standard();
+  @include open-sans();
   font-size: (40/16) * 1rem;
 }
 
 h2 {
-  @include old-standard();
+  @include open-sans();
   font-size: (32/16) * 1rem;
 }
 
@@ -29,15 +29,23 @@ h3 {
   font-size: (24/16) * 1rem;
 }
 
+h5 {
+  @include open-sans();
+  font-weight: 700;
+  font-size: (14/18) * 1rem;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
 a {
   border-bottom: solid 1px transparent;
   color: $cool-gray;
   text-decoration: none;
-  @include transition(border-bottom 0.1s ease-out, color 0.1s ease-out);
+  transition: border-bottom 0.1s ease-out, color 0.1s ease-out; -webkit-transition: border-bottom 0.1s ease-out, color 0.1s ease-out;
 
   &:hover {
-    color: $blue;
-    border-bottom: solid 1px $blue;
+    color: #3f51b5;
+    border-bottom: solid 1px #3f51b5;
   }
 }
 

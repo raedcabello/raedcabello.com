@@ -1,8 +1,17 @@
 ---
 layout: work
-name: Nexus
-slug: nexus
-involvement: Interaction and visual design
+name: Rackspace
+slug: rackspace
+involvement: Interaction design, visual design, user experience, and user research
+workItems:
+  - name: Rackspace brand book
+    url: /assets/portfolio/8_rackspace_brand_book(2015-2016).pdf
+  - name: Rackspace homepage redesign
+    url: /assets/portfolio/7_rackspace_homepage_2016.pdf
+  - name: Rackspace containers project
+    url: /assets/portfolio/9_containers(2015).pdf
+  - name: Rackspace developer docs
+    url: /assets/portfolio/10_developer_docs_2015.pdf
 media:
   -
     title: Product Portfolio

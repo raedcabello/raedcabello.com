@@ -1,11 +1,19 @@
-
 @font-face {
-  font-family: 'Old Standard TT';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   src:
-    url(https://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DAjWwMcLosnYS7_elQHKBmA.woff) format('woff'),
-    url(https://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DJDiI8zI8NGcbDOKyTTsY20.woff2) format('woff2');
+    url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff'),
+    url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff'),
+    url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
 }
 
 @font-face {
@@ -48,8 +56,8 @@
   font-family: 'Vollkorn', Georgia, "Times New Roman", Times, serif;
 }
 
-@mixin old-standard() {
-  font-family: 'Old Standard TT', Georgia, "Times New Roman", Times, serif;
+@mixin open-sans() {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }

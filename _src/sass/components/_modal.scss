@@ -65,7 +65,7 @@
   &.modal-enter.modal-enter-active {
     // background: rgba(black, 0.85);
     opacity: 1;
-    @include transition(opacity 200ms ease-in);
+    transition: opacity 200ms ease-in; -webkit-transition: opacity 200ms ease-in;
 
     .modal-content {
       transform: translateY(0%);
@@ -84,7 +84,7 @@
 
   &.modal-leave.modal-leave-active {
     opacity: 0;
-    @include transition(opacity 200ms 200ms ease-out);
+    transition: opacity 200ms 200ms ease-out; -webkit-transition: opacity 200ms 200ms ease-out;
 
     .modal-content {
       transform: translateY(100vh);
